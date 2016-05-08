@@ -1,0 +1,32 @@
+{
+  "name": "count-lines-in-file",
+  "description": "Counts the number of lines in a file.",
+  "main": "./src/countLinesInFile.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gajus/count-lines-in-file"
+  },
+  "engines": {
+    "node": "^6"
+  },
+  "keywords": [
+    "wc",
+    "count lines"
+  ],
+  "version": "1.0.0",
+  "author": {
+    "name": "Gajus Kuizinas",
+    "email": "gajus@gajus.com",
+    "url": "http://gajus.com"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "split": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0"
+  }
+}
