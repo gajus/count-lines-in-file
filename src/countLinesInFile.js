@@ -2,7 +2,10 @@ const fs = require('fs');
 const split = require('split');
 
 module.exports = (filePath, callback) => {
-    var lineCount = 0;
+    var readError,
+        lineCount;
+
+    lineCount = 0;
 
     fs
         .createReadStream(filePath)
@@ -11,9 +14,15 @@ module.exports = (filePath, callback) => {
             lineCount++;
         })
         .on('end', () => {
+            if (readError) {
+                return;
+            }
+
             callback(null, lineCount - 1);
         })
         .on('error', (error) => {
+            readError = true;
+
             callback(error);
         });
 };
