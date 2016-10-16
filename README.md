@@ -11,7 +11,7 @@ const countLinesInFile = require('count-lines-in-file');
 const path = require('path');
 const targetFilePath = path.resolve(__dirname, './data.txt');
 
-countLinesInFile(targetFilePath, (error: Error, nuberOfLines: number) => {
+countLinesInFile(targetFilePath, (error: Error, numberOfLines: number) => {
 
 });
 ```
