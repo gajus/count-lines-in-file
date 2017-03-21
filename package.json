@@ -10,7 +10,7 @@
     "url": "https://github.com/gajus/count-lines-in-file"
   },
   "engines": {
-    "node": "^5"
+    "node": ">= 5.0.0"
   },
   "keywords": [
     "wc",
